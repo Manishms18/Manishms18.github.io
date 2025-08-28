@@ -686,8 +686,6 @@
     border: 2px solid #444;
     border-radius: 0; /* square edges */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    color: inherit; /* inherit default font colors */
-    font-family: inherit; /* inherit same font as articles */
   }
 
   .pub-card:hover {
@@ -695,14 +693,17 @@
     box-shadow: 0 4px 15px rgba(241, 196, 15, 0.3);
   }
 
+  /* Match Articles h3 styling */
   .pub-card h3 {
-    color: #fff; /* white title text */
+    color: #fff;             /* white text */
+    font-family: inherit;    /* inherit same font as Articles */
+    font-size: inherit;      /* match size */
+    font-weight: inherit;    /* match weight */
+    line-height: inherit;    /* match spacing */
   }
 
   .pub-card p, .pub-card a {
-    color: #ddd; /* light grey body text/links */
-    font-size: inherit;
-    font-weight: inherit;
+    color: #ddd; /* light grey for body text/links */
   }
 
   .pub-card a:hover {
